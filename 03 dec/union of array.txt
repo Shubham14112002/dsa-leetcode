@@ -1,0 +1,35 @@
+int l = 0;
+       int r = 0;
+       int count = 0;
+       
+       while(l < n && r < m)
+       {
+           if(a[l] == b[r])
+           {
+               l++;
+               r++;
+           }
+           else if(a[l] < b[r])
+           {
+               l++;
+           }
+           else
+           {
+               r++;
+           }
+           count++;
+       }
+       
+       while(l < n)
+       {
+           count++;
+           l++;
+       }
+       
+       while(r < m)
+       {
+           count++;
+           r++;
+       }
+       
+       return count;
