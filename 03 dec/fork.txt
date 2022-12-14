@@ -1,0 +1,6 @@
+fork
+git clone
+git init
+git remote add origin repo link
+git branch -M main
+git push -u origin main 
